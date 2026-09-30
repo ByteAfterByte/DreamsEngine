@@ -1,7 +1,7 @@
 ### DreamsEngine
 
 Still work in progress and i'm still in the process of learning both Vulkan and C/C++.
-![Current logo](logo.png =100x100)
+<img src="logo.png" width="100" height="100" alt="Current logo">
 
 ## The direction i want to take for this engine 
 This engine should have an ECS and be able to support ray-tracing and other modern techniques both for visuals and optimization. Also this engine will definitely have an editor and ideally it will support scripting in multiple languages, such as: C++, Rust, Zig and/or some higher level languages like Lua.
