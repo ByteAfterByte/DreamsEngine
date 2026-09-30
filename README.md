@@ -21,4 +21,4 @@ xmake run
 ```
 
 ## Current TODO
-- [] All of the basic engine stuff (device selection, swapchain, pipeline and so on...) 
+- [ ] All of the basic engine stuff (device selection, swapchain, pipeline and so on...) 
