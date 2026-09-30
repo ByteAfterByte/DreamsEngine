@@ -12,7 +12,7 @@ I can't promise to deliver all the features i have in mind since i'm still an am
 ## Building the engine
 The project uses xmake as its build system and dependency manager since it's less of a hassle compared to standard CMake and also because i wanted to give it a try...
 
-To build and run the engine just clone the repository and run:
+So, to build and run the engine make sure you have `xmake` installed on your system then just clone the repository and run:
 ```
 git clone https://github.com/ByteAfterByte/DreamsEngine.git ~/DreamsEngine
 cd ~/DreamsEngine
