@@ -1,6 +1,7 @@
 ### DreamsEngine
 
 Still work in progress and i'm still in the process of learning both Vulkan and C/C++.
+</p>
 <img src="logo.png" width="100" height="100" alt="Current logo">
 
 ## The direction i want to take for this engine 
