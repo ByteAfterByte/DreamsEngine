@@ -19,7 +19,7 @@ DInstance::DInstance()
 
 DInstance::~DInstance()
 {
-    vkDestroyInstance(instance, NULL);
+    vkDestroyInstance(instance, nullptr);
 }
 
 void DInstance::create_instance()
@@ -40,7 +40,7 @@ void DInstance::create_instance()
         .ppEnabledExtensionNames = extensions,
     };
 
-    VkResult result = vkCreateInstance(&instance_create_info, NULL, &instance);
+    VkResult result = vkCreateInstance(&instance_create_info, nullptr, &instance);
 
     if (result != VK_SUCCESS)
     {

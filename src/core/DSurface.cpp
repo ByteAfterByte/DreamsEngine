@@ -8,22 +8,23 @@
 
 using namespace dreamsengine;
 
-DSurface::DSurface(DInstance& instance, DWindow& window) : instance(instance), window(window)
+DSurface::DSurface(DInstance &instance, DWindow &window) : instance(instance), window(window)
 {
     create_surface();
 }
 
 DSurface::~DSurface()
 {
-    vkDestroySurfaceKHR(instance.get_instance(), surface, NULL);
+    vkDestroySurfaceKHR(instance.get_instance(), surface, nullptr);
 }
 
 void DSurface::create_surface()
 {
     VkResult result;
-    result = glfwCreateWindowSurface(instance.get_instance(), window.get_window(), NULL, &surface);
+    result = glfwCreateWindowSurface(instance.get_instance(), window.get_window(), nullptr, &surface);
 
-    if (result != VK_SUCCESS) {
+    if (result != VK_SUCCESS)
+    {
         throw std::runtime_error(FILE_PREFIX + "ERROR: Failed to create window surface.");
     }
 }
