@@ -14,7 +14,6 @@ DInstance::DInstance()
         throw std::runtime_error(FILE_PREFIX + "Vulkan isn't supported, unable to continue.");
 
     glfwInitVulkanLoader(vkGetInstanceProcAddr);
-    std::println("Vulkan loader: true.");
     create_instance();
 }
 
@@ -32,7 +31,7 @@ void DInstance::create_instance()
     };
 
     uint32_t extension_count;
-    const char** extensions = glfwGetRequiredInstanceExtensions(&extension_count);
+    const char **extensions = glfwGetRequiredInstanceExtensions(&extension_count);
 
     VkInstanceCreateInfo instance_create_info = VkInstanceCreateInfo{
         .sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO,
@@ -43,7 +42,8 @@ void DInstance::create_instance()
 
     VkResult result = vkCreateInstance(&instance_create_info, NULL, &instance);
 
-    if (result != VK_SUCCESS) {
+    if (result != VK_SUCCESS)
+    {
         throw std::runtime_error(FILE_PREFIX + "ERROR: Failed to create the Vulkan Instance.");
         return;
     }
