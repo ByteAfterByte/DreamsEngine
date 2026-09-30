@@ -1,15 +1,13 @@
 <table>
   <tr>
     <td valign="middle">
-      <img src="logo.png" width="100" alt="Current logo">
-    </td>
-    <td valign="middle">
+      <img src="logo.png" width="100" alt="Current logo">    
+      <td valign="middle">
 
 ### DreamsEngine
 
 Still work in progress and i'm still in the process of learning both Vulkan and C/C++.
 
-    </td>
   </tr>
 </table>
 
